@@ -1,0 +1,11 @@
+.buttonNavigationBar {
+    height: 65px;
+    width: 65px;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+}
+
+.buttonNavigationBar img {
+    height: 5vh;
+}
