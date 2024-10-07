@@ -3,7 +3,7 @@ import './Login.css'
 function Login() {
     return (
      <div className="bodyLogin">
-        <img src="" alt="" />
+        <a href="/dashboard">ENTRAR</a>
      </div>
     );
   }

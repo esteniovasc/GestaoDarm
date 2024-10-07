@@ -1,11 +1,9 @@
-import HomePresentation from './pages/HomePresentation/HomePresentation';
-import Login from './pages/Login/Login';
+import AppRoutes from './Route';
 
 function App() {
   return (
     <div>
-      <HomePresentation/>
-      <Login></Login>
+      <AppRoutes></AppRoutes>
     </div>
   );
 }
