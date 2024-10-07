@@ -1,0 +1,51 @@
+.sliderProjects {
+    margin: 0 auto;
+    height: 20vh;
+    width: 90%;
+    overflow: hidden;
+}
+
+.slides {
+    height: -webkit-fill-available;
+    display: flex;
+}
+
+.slides img {
+    height: -webkit-fill-available;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    
+}
+
+.manual-navigation {
+    position: absolute;
+    width: -webkit-fill-available;
+    margin-top: -4vh;
+    display: flex;
+    justify-content: center;
+    gap: 0.5vh;
+}
+
+.manual-btn {
+    border: 0.3vh solid white;
+    padding: 1vh;
+    border-radius: 2vh;
+    cursor: pointer;
+}
+
+.manual-btn:hover{
+    background-color: #224ebb;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: 25%;
+}

@@ -1,8 +1,8 @@
 .buttonNavigationBar {
-    height: 65px;
-    width: 65px;
-    background-color: white;
-    border-radius: 50%;
+    height: 7vh;
+    width: 7vh;
+    background-color: rgb(224, 234, 254);
+    border-radius: 30%;
     border: none;
 }
 
