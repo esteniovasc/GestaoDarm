@@ -1,6 +1,12 @@
-.sectionDashboardHome{
+.sectionDashboardHome {
     display: flex;
     flex-direction: column;
     padding: 2vh;
     gap: 1vh;
 }
+
+/* element:last-child{
+    padding-bottom: 10vh;
+} 
+    adicionar isso ao ultimo elemento para a barra de navegacao nao cobrir  
+*/

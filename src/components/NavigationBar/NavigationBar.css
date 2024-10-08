@@ -1,14 +1,15 @@
 .navigationBar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1vh;
+    padding-bottom: 2vh;
     background-color: #0F2355;
     border-top-left-radius: 2vh;
     border-top-right-radius: 2vh;
 
-    position: fixed;
+    position: fixed; /*por enquanto fixed, quando a página tiver conteudo suficiente, usar sticky*/
     bottom: 0;
     width: 100%;
+    z-index: 99;
     box-sizing: border-box;
-    gap: 5px;
 }

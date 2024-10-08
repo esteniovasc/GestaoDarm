@@ -1,20 +1,20 @@
 import HeaderDashboard from '../../components/HeaderDashboard/HeaderDashboard';
 import NavigationBar from '../../components/NavigationBar/NavigationBar';
 
-function DashboardHome() {
+function ProjectList() {
     return (
       <div>
         <HeaderDashboard/>
         <section>
-          <h5>Bem-vindo $nomeUsuario</h5>
-          <h4>Projetos em andamento:</h4>
-          <p>carrossel</p>
-          <h4>Horário de hoje ($dia_data)</h4>
-          <p>planilha - powerbi?</p>
+          <h5>Lista de tarefas individuais</h5>
+          {/* <projectView> 
+            link to="enderecoSEMbarra"
+            para navegacao recursiva
+          */}
         </section>
         <NavigationBar/>
       </div>
     );
   }
   
-  export default DashboardHome;
+  export default ProjectList;

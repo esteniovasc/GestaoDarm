@@ -1,9 +1,10 @@
 import './ButtonNavigationBar.css'
 
 function ButtonNavigationBar(props){
+    
     return(
         <div>
-            <button className="buttonNavigationBar"><img src={props.srcIcon} alt={props.alt} /></button>
+            <button className={props.class}><img src={props.srcIcon} alt={props.alt} /></button>
         </div>
     )
 }
