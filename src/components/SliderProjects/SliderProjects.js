@@ -1,28 +1,26 @@
-import './SliderProjects.css'
-
+import { Link } from 'react-router-dom';
 import {Swiper, SwiperSlide} from 'swiper/react'
+import projectsData from '../../data/projectsData.json'
+import './SliderProjects.css'
 
 function SliderProjects() {
 
-    const projects = [
-        { id: '1', image: '/projects/maestro.jpg'},
-        { id: '2', image: '/projects/eyon.jpg'},
-        { id: '3', image: '/projects/sandbox.jpg'},
-        { id: '4', image: '/projects/smile.jpg'}
-    ]
+    const projects = projectsData;
 
     return (
       <div className='slider'>
-        <Swiper
-            slidesPerView={1}
-            pagination={{ clickable: true}}
-        >
-            {projects.map((projects)=> (
-                <SwiperSlide key={projects.id}>
-                    <img src={projects.image} alt="a" className='slide-item'/>
-                </SwiperSlide>
-            ))}
-        </Swiper>
+          <Swiper
+              slidesPerView={1}
+              pagination={{clickable: true}}
+          >
+              {projects.map((projects)=> (
+                  <SwiperSlide key={projects.id}>
+                    <Link to={`/projectview/${projects.id}`}>
+                      <img src={projects.image} alt="a" className='slide-item'/>
+                    </Link>  
+                  </SwiperSlide>
+              ))}
+          </Swiper>
       </div>
     );
   }

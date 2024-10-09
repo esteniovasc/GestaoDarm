@@ -1,3 +1,4 @@
+import DateToday from '../../components/DateToday/DateToday';
 import HeaderDashboard from '../../components/HeaderDashboard/HeaderDashboard';
 import NavigationBar from '../../components/NavigationBar/NavigationBar';
 import SliderProjects from '../../components/SliderProjects/SliderProjects';
@@ -11,7 +12,7 @@ function DashboardHome() {
           <h5>Bem-vindo, $nomeUsuario!</h5>
           <h4>Projetos em andamento:</h4>
           <SliderProjects/>
-          <h4>Horário de hoje ($dia_data)</h4>
+          <DateToday/>
           <p>planilha - powerbi?</p>
         </section>
         <NavigationBar/>

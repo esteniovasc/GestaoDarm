@@ -1,0 +1,6 @@
+[
+    { "id": "1", "image": "/projects/maestro.jpg", "name": "MAESTRO", "description": "Otimizar o gerenciamento de software", "linkMeet": "https://meet.google.com/tvi-pkbu-wur"},
+    { "id": "2", "image": "/projects/eyon.jpg", "name": "eyon", "description": "Otimizar o gerenciamento de software", "linkMeet": "https://meet.google.com/tvi-pkbu-wur" },
+    { "id": "3", "image": "/projects/sandbox.jpg", "name": "sandbox", "description": "Otimizar o gerenciamento de software", "linkMeet": "https://meet.google.com/tvi-pkbu-wur" },
+    { "id": "4", "image": "/projects/smile.jpg", "name": "smile", "description": "Otimizar o gerenciamento de software", "linkMeet": "https://meet.google.com/tvi-pkbu-wur" }
+  ]

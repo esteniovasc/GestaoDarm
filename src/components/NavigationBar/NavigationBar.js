@@ -22,7 +22,7 @@ function NavigationBar(){
             </Link>
             
             <Link to="/projectslist">
-                <ButtonNavigationBar srcIcon="/icons/icons8-project-90.png" class={`buttonNavigationBar ${location.pathname === '/projectslist' ? 'active' : ''}`}/>
+                <ButtonNavigationBar srcIcon="/icons/icons8-project-90.png" class={`buttonNavigationBar ${location.pathname === '/projectslist' || location.pathname.startsWith('/projectview/') ? 'active' : ''}`}/>
             </Link>
             
             <Link to="/teams">
