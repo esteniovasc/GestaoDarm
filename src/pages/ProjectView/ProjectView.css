@@ -1,0 +1,25 @@
+.sectionProjectsList {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    gap: 1vh;
+}
+
+.h4ProjectName {
+    font-style: italic;
+}
+
+.imageProject {
+    height: 15vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2vh;
+}
+
+.objectiveStyle{
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+

@@ -1,10 +1,6 @@
-.sectionProjectsList {
+.sectionProjectView {
     display: flex;
     flex-direction: column;
     padding: 2vh;
     gap: 1vh;
-}
-
-.h4ProjectsList {
-    text-align: center;
 }

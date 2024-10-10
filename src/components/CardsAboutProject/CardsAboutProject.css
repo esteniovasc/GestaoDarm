@@ -1,0 +1,32 @@
+.sectionProjectCardsLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.projectCardLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1vh;
+    background-color: #EAE8E8;
+    border-radius: 2vh;
+    cursor: pointer;
+
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(0, 9, 132);
+}
+
+.projectCardLink img {
+    height: 8vh;
+    object-fit: contain;
+}
+
+.projectCardLink div p {
+    display: flex;
+    justify-content: end;
+    text-align: end;
+}
+

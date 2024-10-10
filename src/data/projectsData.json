@@ -1,6 +1,9 @@
 [
-    { "id": "1", "image": "/projects/maestro.jpg", "name": "MAESTRO", "description": "Otimizar o gerenciamento de software", "linkMeet": "https://meet.google.com/tvi-pkbu-wur"},
-    { "id": "2", "image": "/projects/eyon.jpg", "name": "eyon", "description": "Otimizar o gerenciamento de software", "linkMeet": "https://meet.google.com/tvi-pkbu-wur" },
-    { "id": "3", "image": "/projects/sandbox.jpg", "name": "sandbox", "description": "Otimizar o gerenciamento de software", "linkMeet": "https://meet.google.com/tvi-pkbu-wur" },
-    { "id": "4", "image": "/projects/smile.jpg", "name": "smile", "description": "Otimizar o gerenciamento de software", "linkMeet": "https://meet.google.com/tvi-pkbu-wur" }
+    { "id": "1", "image": "/projects/maestro.jpg", "name": "MAESTRO", "description": "Otimizar o gerenciamento de software", "linkTeams": "https://meet.google.com/tvi-pkbu-wur", "linkGitLab": "https://about.gitlab.com/", "linkJira": "https://www.atlassian.com/br/software/jira", "linkFigma": "https://www.figma.com/" },
+
+    { "id": "2", "image": "/projects/eyon.jpg", "name": "eyon", "description": "Otimizar o gerenciamento de software", "linkTeams": "https://meet.google.com/tvi-pkbu-wur", "linkGitLab": "https://about.gitlab.com/", "linkJira": "https://www.atlassian.com/br/software/jira", "linkFigma": "https://www.figma.com/" },
+
+    { "id": "3", "image": "/projects/sandbox.jpg", "name": "sandbox", "description": "Otimizar o gerenciamento de software", "linkTeams": "https://meet.google.com/tvi-pkbu-wur", "linkGitLab": "https://about.gitlab.com/", "linkJira": "https://www.atlassian.com/br/software/jira", "linkFigma": "https://www.figma.com/" },
+
+    { "id": "4", "image": "/projects/smile.jpg", "name": "smile", "description": "Otimizar o gerenciamento de software", "linkTeams": "https://meet.google.com/tvi-pkbu-wur", "linkGitLab": "https://about.gitlab.com/", "linkJira": "https://www.atlassian.com/br/software/jira", "linkFigma": "https://www.figma.com/" }
   ]
