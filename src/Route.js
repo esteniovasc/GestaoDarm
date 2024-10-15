@@ -9,20 +9,25 @@ import ProjectsList from "./pages/ProjectsList/ProjectsList";
 import ProjectView from "./pages/ProjectView/ProjectView";
 import Teams from "./pages/Teams/Teams";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import { useState } from 'react';
+import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 
 
 function AppRoutes() {
+
+  const [user, setUser] = useState(null);
+
     return (
       <Router>
         <Routes>
             <Route path="/" element={<HomePresentation/>}></Route>
-            <Route path="/login" element={<Login/>}></Route>
-            <Route path="/dashboard" element={<DashboardHome/>}></Route>
-            <Route path="/schedules" element={<Schedules/>}></Route>
-            <Route path="/tasks" element={<Tasks/>}></Route>
-            <Route path="/projectslist" element={<ProjectsList/>}></Route>
-            <Route path="/projectview/:id" element={<ProjectView/>}></Route>
-            <Route path="/teams" element={<Teams/>}></Route>
+            <Route path="/login" element={<Login setUser={setUser}/>}></Route>
+            <Route path="/dashboard" element={<ProtectedRoute user={user}><DashboardHome/></ProtectedRoute>}></Route>
+            <Route path="/schedules" element={<ProtectedRoute user={user}><Schedules/></ProtectedRoute>}></Route>
+            <Route path="/tasks" element={<ProtectedRoute user={user}><Tasks/></ProtectedRoute>}></Route>
+            <Route path="/projectslist" element={<ProtectedRoute user={user}><ProjectsList/></ProtectedRoute>}></Route>
+            <Route path="/projectview/:id" element={<ProtectedRoute user={user}><ProjectView/></ProtectedRoute>}></Route>
+            <Route path="/teams" element={<ProtectedRoute user={user}><Teams/></ProtectedRoute>}></Route>
 
             <Route path="/teste" element={<Dashboard/>}></Route>
         </Routes>
