@@ -17,7 +17,11 @@ const Login = ({ setUser }) => {
     
     // Aqui você pode processar o token, por exemplo, para autenticar no back-end
     console.log(userData);
+
     setUser(userData); // Armazena as informações do usuário
+
+    localStorage.setItem('user', JSON.stringify(userData));
+
     navigate('/dashboard');
   };
 

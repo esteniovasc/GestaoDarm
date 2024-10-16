@@ -12,3 +12,8 @@
     z-index: 99;
     box-sizing: border-box;
 }
+
+.userProfilePicture {
+    height:5vh;
+    border-radius: 5vh;
+}

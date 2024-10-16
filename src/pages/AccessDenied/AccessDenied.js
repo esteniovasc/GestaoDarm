@@ -4,7 +4,7 @@ function AccessDenied() {
     return (
       <div>
         <header className="headerAccessDenied">
-            <img src="/icons/logoDarmLabs.jpg" alt="Logo Darm Labs" style={{height:'5vh'}} />
+        <a href='/'><img src="/icons/logoDarmLabs.jpg" alt="Logo Darm Labs" style={{height:'5vh'}}/></a>
         </header>
         <div className='divAccessDenied'>
             <p>Parece que você está tentando acessar uma rota protegida</p>

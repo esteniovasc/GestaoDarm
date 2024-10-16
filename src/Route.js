@@ -9,7 +9,7 @@ import ProjectsList from "./pages/ProjectsList/ProjectsList";
 import ProjectView from "./pages/ProjectView/ProjectView";
 import Teams from "./pages/Teams/Teams";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import AccessDenied from "./pages/AccessDenied/AccessDenied";
 import Error404 from "./pages/Error404/Error404";
@@ -18,6 +18,14 @@ import Error404 from "./pages/Error404/Error404";
 function AppRoutes() {
 
   const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem('user');
+    console.log('Stored User:', storedUser);
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
 
     return (
       <Router>
