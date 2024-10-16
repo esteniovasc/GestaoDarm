@@ -1,0 +1,54 @@
+.headerAccessDenied {
+    display: flex;
+    padding: 1vh;
+    background-color: #224ebb;
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    box-sizing: border-box;
+}
+
+.divAccessDenied {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2vh;
+    gap: 20vh;
+    height: 80vh;
+}
+
+.divAccessDenied a {
+    text-decoration: none;
+    color: black;
+}
+
+.divAccessDeniedLink {
+    display: flex;
+    gap: 1vh;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+}
+
+.divAccessDeniedLink b {
+    color: #224ebb;
+    text-decoration: underline;
+}
+
+.imgError404 {
+    height: 20vh;
+    transform: translateX(1vh) translateY(-2vh);
+}
+
+.divImgAccessDenied {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: -webkit-fill-available;
+    position: fixed;
+    bottom: 0;
+}

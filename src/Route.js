@@ -11,6 +11,8 @@ import Teams from "./pages/Teams/Teams";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import { useState } from 'react';
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
+import AccessDenied from "./pages/AccessDenied/AccessDenied";
+import Error404 from "./pages/Error404/Error404";
 
 
 function AppRoutes() {
@@ -21,7 +23,9 @@ function AppRoutes() {
       <Router>
         <Routes>
             <Route path="/" element={<HomePresentation/>}></Route>
+
             <Route path="/login" element={<Login setUser={setUser}/>}></Route>
+            
             <Route path="/dashboard" element={<ProtectedRoute user={user}><DashboardHome/></ProtectedRoute>}></Route>
             <Route path="/schedules" element={<ProtectedRoute user={user}><Schedules/></ProtectedRoute>}></Route>
             <Route path="/tasks" element={<ProtectedRoute user={user}><Tasks/></ProtectedRoute>}></Route>
@@ -30,6 +34,8 @@ function AppRoutes() {
             <Route path="/teams" element={<ProtectedRoute user={user}><Teams/></ProtectedRoute>}></Route>
 
             <Route path="/teste" element={<Dashboard/>}></Route>
+            <Route path="/accessdenied" element={<AccessDenied/>}></Route>
+            <Route path="*" element={<Error404/>}></Route>
         </Routes>
       </Router>
     )
