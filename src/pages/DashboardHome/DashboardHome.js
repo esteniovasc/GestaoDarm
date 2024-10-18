@@ -1,3 +1,4 @@
+import AvailableTimes from '../../components/AvailableTimes/AvailableTimes';
 import HeaderDashboard from '../../components/HeaderDashboard/HeaderDashboard';
 import NavigationBar from '../../components/NavigationBar/NavigationBar';
 import SliderProjects from '../../components/SliderProjects/SliderProjects';
@@ -17,6 +18,7 @@ function DashboardHome() {
           <SliderProjects/>
           <h4>Horário de hoje <b className="dateStyle">({`${date}`})</b></h4>
           <p>Cadeiras disponíveis:</p>
+          <AvailableTimes/>
         </section>
         <NavigationBar/>
       </div>

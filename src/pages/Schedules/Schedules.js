@@ -1,12 +1,13 @@
 import HeaderDashboard from '../../components/HeaderDashboard/HeaderDashboard';
 import NavigationBar from '../../components/NavigationBar/NavigationBar';
+import './Schedules.css';
 
 function Schedules() {
     return (
       <div>
         <HeaderDashboard/>
-        <section>
-          <h5>estes são os horários atuais</h5>
+        <section className='sectionSchedules'>
+          <h5>Seção para os horários</h5>
         </section>
         <NavigationBar/>
       </div>

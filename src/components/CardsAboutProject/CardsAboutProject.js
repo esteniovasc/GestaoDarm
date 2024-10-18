@@ -15,7 +15,7 @@ function CardsAboutProject(props){
 
             <a href={props.hrefGitLab} target="_blank" rel="noreferrer" className="projectCardLink">
                 <div>
-                    <img src="/icons/softwares/icons8-gitlab-100.png" alt="" />
+                    <img src="/icons/softwares/gitlab.svg" alt="" />
                     <p>Acompanhar CI/CD</p>
                 </div>
             </a>

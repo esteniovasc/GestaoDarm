@@ -37,10 +37,6 @@ function UserProfile() {
                     <img src='/icons/move-to-svgrepo-com.svg' alt='' style={{height:'2vh'}}/>
             </div>
 
-            <a href='/' className='exitPageUserProfile'>
-                
-            </a>
-            
         </section>
         <NavigationBar/>
       </div>

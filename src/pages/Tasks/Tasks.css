@@ -1,0 +1,6 @@
+.sectionTasks {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    gap: 1vh;
+}
