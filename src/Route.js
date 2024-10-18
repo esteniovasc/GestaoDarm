@@ -13,22 +13,43 @@ import { useState, useEffect } from 'react';
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import AccessDenied from "./pages/AccessDenied/AccessDenied";
 import Error404 from "./pages/Error404/Error404";
-
+import UserProfile from "./pages/UserProfile/UserProfile";
+import './Route.css'
 
 function AppRoutes() {
 
   const [user, setUser] = useState(null);
+  const [loading,setLoading] = useState(true);
 
-  useEffect(() => {
-    const storedUser = localStorage.getItem('user');
-    console.log('Stored User:', storedUser);
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
+    useEffect(() => {
+      const storedUser = localStorage.getItem('user');
+      console.log('Stored User:', storedUser);
+      
+      setTimeout(() => {
+        if (storedUser) {
+          setUser(JSON.parse(storedUser));
+        }
+    
+        setLoading(false);
+      }, 1500)
+
+    }, []);
+
+    if (loading) {
+      return (
+        <div className="loadingOverlay">
+          <div className="loadingContent">
+            <img src="/loading.gif" alt="Loading" />
+            <p>Carregando...</p>
+          </div>
+        </div>
+      );
     }
-  }, []);
+
 
     return (
       <Router>
+    
         <Routes>
             <Route path="/" element={<HomePresentation/>}></Route>
 
@@ -40,13 +61,15 @@ function AppRoutes() {
             <Route path="/projectslist" element={<ProtectedRoute user={user}><ProjectsList/></ProtectedRoute>}></Route>
             <Route path="/projectview/:id" element={<ProtectedRoute user={user}><ProjectView/></ProtectedRoute>}></Route>
             <Route path="/teams" element={<ProtectedRoute user={user}><Teams/></ProtectedRoute>}></Route>
+            <Route path="/userprofile" element={<ProtectedRoute user={user}><UserProfile/></ProtectedRoute>}></Route>
 
             <Route path="/teste" element={<Dashboard/>}></Route>
             <Route path="/accessdenied" element={<AccessDenied/>}></Route>
             <Route path="*" element={<Error404/>}></Route>
         </Routes>
+
       </Router>
     )
-  }
+}
   
 export default AppRoutes;

@@ -5,6 +5,11 @@
     gap: 1vh;
 }
 
+.dateStyle {
+    font-weight: 400;
+    font-style: italic;
+}
+
 /* element:last-child{
     padding-bottom: 10vh;
 } 

@@ -1,0 +1,33 @@
+.sectionPageUserProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh;
+    gap: 1vh;
+}
+
+.userPageProfilePicture {
+    height:10vh;
+    border-radius: 5vh;
+}
+
+.exitPageUserProfile { 
+    padding: 10vh;
+    text-decoration: none;
+    color: black;   
+}
+
+.divExitPageUserProfile {
+    display: flex;
+    margin-top: 10vh;
+    padding: 2vh;
+    gap: 1vh;
+    flex-direction: row;
+    align-items: center;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.divExitPageUserProfile b {
+    text-decoration: underline;
+}

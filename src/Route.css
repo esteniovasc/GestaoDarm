@@ -1,0 +1,47 @@
+/* Overlay que cobre toda a tela */
+.loadingOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semitransparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99; /* Certifique-se de que esteja acima de todos os outros elementos */
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Animação de fade-in */
+  }
+  
+  /* Conteúdo de carregamento centralizado */
+  .loadingContent {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .loadingContent img {
+    width: 5vh;
+    height: 5vh;
+  }
+  
+  /* Fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Adicione uma animação de fade-out se necessário */
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
