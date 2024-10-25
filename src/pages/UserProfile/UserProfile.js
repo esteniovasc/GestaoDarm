@@ -2,6 +2,7 @@ import HeaderDashboard from '../../components/HeaderDashboard/HeaderDashboard';
 import NavigationBar from '../../components/NavigationBar/NavigationBar';
 import './UserProfile.css'
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function UserProfile() {
 
@@ -22,6 +23,19 @@ function UserProfile() {
     navigate('/'); // Redirecionar para a página de login ou outra rota de sua escolha
   };
 
+  useEffect(() => {
+    if (timeRemaining > 0) {
+      const timeoutId = setTimeout(() => {
+        handleLogout(); // Limpa o localStorage e redireciona ao expirar
+      }, timeRemaining);
+
+      return () => clearTimeout(timeoutId); // Limpa o timeout ao desmontar o componente
+    
+    } else {
+      handleLogout(); // Caso o tempo já tenha expirado, desloga imediatamente
+    }
+  }, [timeRemaining]);
+
     return (
       <div>
         <HeaderDashboard/>
@@ -33,8 +47,8 @@ function UserProfile() {
             <p>Tempo de sessão restante: {`${minutesRemaining}`} minutos</p>
 
             <div className='divExitPageUserProfile' onClick={handleLogout}>
-                    <p><b>Sair</b> da conta</p>
-                    <img src='/icons/move-to-svgrepo-com.svg' alt='' style={{height:'2vh'}}/>
+              <p><b>Sair</b> da conta</p>
+              <img src='/icons/move-to-svgrepo-com.svg' alt='' style={{height:'2vh'}}/>
             </div>
 
         </section>
